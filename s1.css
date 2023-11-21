@@ -1,0 +1,168 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: url(../img/img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+section {
+  height: 100vh;
+  background-color: rgba(25, 36, 58, 0.8);
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+}
+.title h1 {
+  background: rgba(60, 68, 83, 0.7);
+  text-align: center;
+  padding: 20px 0 50px 0;
+  color: aliceblue;
+
+  transform: translate(0%, 55%);
+  /* border-bottom: 1px solid silver; */
+}
+.center form {
+  box-sizing: border-box;
+  padding: 15px 85px;
+}
+form .inpt {
+  position: relative;
+  border-bottom: 1px solid #303846;
+  margin: 30px 0;
+}
+.inpt input {
+  width: 100%;
+  padding: 0 5px;
+  height: 50px;
+  font-size: 16px;
+  color: antiquewhite;
+  border: none;
+  background: none;
+  outline: none;
+}
+.inpt label {
+  position: absolute;
+
+  top: 50%;
+  left: 5px;
+  color: #ffffff;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none; /* 3ibar text mech mawjoud  */
+  transition: 0.5s;
+}
+.inpt span::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2c66db;
+  transition: 0.5s;
+}
+.inpt input:focus ~ label,
+.inpt input:valid ~ label {
+  top: -5px;
+  color: #2c66db;
+  font-size: 20px;
+}
+.inpt input:focus ~ span::before,
+.inpt input:valid ~ span::before {
+  width: 100%;
+}
+input[type="submit"]{
+
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    background:#f5a425;
+    border:none;
+    font-size: 18px;
+    margin-top: 20px;
+    color: beige;
+    font-style: unset;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+
+    
+}
+input[type="submit"]:hover{
+    border: 1px solid #f5a425 ;
+    background: #ffffff;
+    color: #f5a425;
+    transition: .5s;
+
+}
+.bk{
+    position: absolute;
+    left: 40%;
+    padding:30px;
+    text-decoration: none;
+    color: #000000;
+    
+    bottom: -50%;
+
+}
+.bk:hover{
+border: 1px solid #f5a425;
+
+}
+
+
+/* nav bar */
+
+header {
+    background-color: #182339;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 190px; /*  l 15 men fou9 wo louta wo 250 men lajneb */
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    z-index: 999;
+    opacity: 85%;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.7em;
+    font-weight: 1000;
+    margin: 1px 10px;
+    text-transform: uppercase;
+  }
+  .logo > span {
+    color: #dd9627;
+  }
+  .navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+  }
+  .navigation a:hover {
+    color: #dd9627;
+    border: #dd9627 solid;
+  
+    transform: scale(1.1);
+  }

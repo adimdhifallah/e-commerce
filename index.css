@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: url(../img/img.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #182339;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 190px; /*  l 15 men fou9 wo louta wo 250 men lajneb */
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  z-index: 999;
+  opacity: 85%;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.7em;
+  font-weight: 1000;
+  margin: 1px 10px;
+  text-transform: uppercase;
+}
+.logo > span {
+  color: #dd9627;
+}
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.navigation a:hover {
+  color: #dd9627;
+  border: #dd9627 solid;
+
+  transform: scale(1.1);
+}
+section {
+  padding-top: 200px;
+}
+
+.sec {
+  width: 100%;
+
+  min-height: 85vh; 
+  display: flex;
+  text-align-last: center;
+  flex-direction: column;
+  line-height: 2;
+}
+.sec p {
+  font-size: 2.5em;
+  color: rgb(7, 0, 0);
+  font-weight: bolder;
+}
+.sec h1 {
+  font-size: 4.9em;
+  color: #fff;
+  font-weight: 700;
+}
+.sec #spn {
+  color: #f5a425;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  border: none;
+  background-color: #f5a425;
+  padding: 20px;
+  box-shadow: 2px 2px 2px #182339;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 21em;
+  background-color: #182339;
+  padding: 40px;
+  margin: 11px;
+  box-shadow: 5px 4px 3px black;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+}
+.cards #partie1 {
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.1);
+  color: #f5a425;
+  cursor: pointer;
+}
